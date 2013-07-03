@@ -1,6 +1,6 @@
 -- Anthony S Chapman 51016069
 -- CS3518 Lang and Comp Assesment
- 
+
 {--Qestion 1    member "a" ["b","c","a","apple"]   gives True
                 member "app" ["b","c","a","apple"]   gives False
         member "a" [1..] gives ERROR - Cannot infer instance
@@ -34,7 +34,6 @@ getelt i x = if (length x) < i then Nothing else Just (head ( drop (i-1) x ))
 --         getelt 2 [1..] gives 2
 getelt2 :: Int -> [a] -> a
 getelt2 i x = (head ( drop (i-1) x )) --Maybe some default for [] 
-
 
 --Queston 3   setelt 2 [3,4,5,6] 10   gives   [3,10,5,6]
 --            setelt 2 [1..10] 3 gives [1,3,3,4,5,6,7,8,9,10]
@@ -72,7 +71,6 @@ isIn y n =  [x | x <- y, n == x] -- greates a list consiting of n out of a list.
 once :: [Int] -> Int -> Bool
 once [] x = False
 once y n = (length(isIn y n) == 1)
-
 
 --TicTaToe
 
